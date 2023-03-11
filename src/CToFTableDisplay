@@ -1,0 +1,19 @@
+public class CToFTableDisplay {
+    public static void main(String[] args) {
+        // Print table header
+        System.out.println("Celsius\tFahrenheit");
+        // Repeat over Celsius values from -100 to 100 in increments of 1
+        for (double celsius = -100; celsius <= 100; celsius++) {
+            // Convert Celsius to Fahrenheit using the CtoF method
+            double fahrenheit = CtoF(celsius);
+            // Print Celsius and Fahrenheit values in tabular format
+            System.out.printf("%.1f\t%.1f%n", celsius, fahrenheit);
+        }
+    }
+
+    public static double CtoF(double celsius) {
+        // Convert Celsius to Fahrenheit and return the value
+        return (celsius * 1.8) + 32;
+    }
+
+}
